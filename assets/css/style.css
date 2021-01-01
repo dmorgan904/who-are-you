@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Georgia, 'Times New Roman', sans-serif;
 }
@@ -34,5 +39,21 @@ header nav ul li {
 }
 
 .hero {
-    background-image: ;
+    background-image: url("../images/pexels-eberhard-grossgasteiger-844297.jpg");
+    background-size: cover;
+    background-position: center;   
+    display: flex;
+    height: 300px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.hero h2 {
+    color: #FA9C93;
+    background-color: #7A4C48;
+    display: block;
+    align-items: flex-end;
+    font-style: italic;
+    font-size: 20px;
 }
