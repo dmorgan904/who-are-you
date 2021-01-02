@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; 
 }
 
 body {
@@ -14,6 +15,7 @@ header {
     padding: 20px 30px;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 header h1 {
@@ -49,7 +51,7 @@ header nav ul li {
     justify-content: flex-end;
     align-items: flex-end;
     background-attachment: fixed;
-    height: 300px; 
+    height: 300px;
 }
 
 .hero-quote {
@@ -188,3 +190,87 @@ a:visited {
     color: black;
 }
 
+/* MEDIA QUERIES */
+@media screen and (max-width: 980px) {
+    header {
+        display: flex; 
+        flex-wrap: wrap;
+        padding: 20px 30px;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        
+}
+
+    header h1 {
+        width: 100%;
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    .hero-quote {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-quote h2 {
+        font-size: 30px;
+    }
+
+    .flex-bio-p {
+        display:flex;
+        flex-wrap: wrap;
+        font-size: 27px;
+    }
+
+    .contact-title {
+        font-size: 40px;
+    }
+
+    .contact-info ul li {
+        text-align: center;
+        width: 100%;
+        padding: 5px; 
+        font-size: 30px; 
+    }
+
+    .flex-bio img {
+        height: 500px;
+        width: 500px;
+        padding: 10px;
+    } 
+
+    .work-h1 {
+        font-size: 40px;
+    }
+
+    .flex-bio-h3 {
+        font-size: 40px;
+    }
+
+    .my-work {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* cellphones */
+    @media screen and (max-width: 575px) {
+        header h1 {
+            width: 100%;
+            font-size: 80px; 
+        }
+        
+        .flex-bio-p {
+            display:flex;
+            flex-wrap: wrap;
+            font-size: 40px;
+        }
+ 
+        .my-work {
+            grid-template-columns: 1fr;
+        }
+
+}
