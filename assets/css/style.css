@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #122230;
+    --secondary-color: #5B7388;
+    --tertiary-color: #FA9C93; 
+    --color-4: #7EA0BD; 
+}
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +12,12 @@
 
 body {
     font-family: Georgia, 'Times New Roman', sans-serif;
-    color: #122230;
-    background-color:#5B7388;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 header {
     display: flex;
-    background-color: #5B7388;
+    background-color: var(--secondary-color);
     padding: 20px 30px;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +28,7 @@ header h1 {
     font-family: Georgia, 'Times New Roman', sans-serif;
     font-size: 50px;
     font-weight: bold;
-    color: #FA9C93;
+    color: var(--tertiary-color);
 }
 
 header nav {
@@ -33,7 +39,7 @@ header nav ul {
     flex-wrap: wrap;
     list-style: none;
     align-items: center;
-    color: #FA9C93;
+    color: var(--tertiary-color);
 }
 
 header nav ul li {
@@ -60,12 +66,13 @@ header nav ul li {
 
 .hero h2 {
     color: #172B3D;
-    background-color: #7EA0BD;
+    background-color: var(--color-4);
     font-style: italic;
     font-size: 20px;
     padding-right: 10px;
 }
 
+/* Work Styling*/ 
 .work-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -96,7 +103,7 @@ header nav ul li {
 .work h3, .work h4 {
     text-align: right; 
     color: #172B3D; 
-    background-color: #7EA0BD; 
+    background-color: var(--color-4); 
 }
 
 .work-title {
@@ -134,6 +141,7 @@ header nav ul li {
     text-align: center;
 }
 
+/*Biography Styling */
 .flex-bio-h3 {
     font-size: 30px;
     margin: 10px;
@@ -157,6 +165,7 @@ header nav ul li {
     padding: 10px;
 } 
 
+/*Contact Info Styling */
 .contact-wrapper {
     padding: 10px;
     margin:10px;
@@ -182,12 +191,12 @@ header nav ul li {
 
 a:link {
     text-decoration: none;
-    color: black; 
+    color: var(--primary-color); 
 }
 
 a:visited {
     text-decoration: none;
-    color: black;
+    color: var(--primary-color);
 }
 
 /* MEDIA QUERIES */
@@ -199,9 +208,8 @@ a:visited {
         justify-content: space-between;
         align-items: flex-start;
         position: relative;
-        
-}
-
+    }
+    
     header h1 {
         width: 100%;
     }
