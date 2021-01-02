@@ -5,6 +5,8 @@
 
 body {
     font-family: Georgia, 'Times New Roman', sans-serif;
+    color: #66403C;
+    background-color: #C77C75;
 }
 header {
     display: flex;
@@ -59,4 +61,67 @@ header nav ul li {
     background-color: #7A4C48;
     font-style: italic;
     font-size: 20px;
+}
+
+.work-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.my-work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2 1fr);
+    width: 80%;
+}
+
+.grid-work {
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.work {
+    margin: 20px;
+    border: 2px solid #66403C;
+    height: 200px; 
+}
+
+.work-1 {
+    background-image: url("../images/run-buddy SC.png");
+    background-size: cover;
+    position: relative;
+    height: 200px;
+}
+
+.work h3, .work h4 {
+    text-align: right; 
+    color: #FA9C93; 
+    background-color: #66403C;  
+}
+
+.work-size {
+    border: 2px solid #66403C;
+    margin: 20px;
+}
+
+.work-2 {
+    background-image: url("../images/seacrh horse SC.png");
+    background-size: cover;
+    position: relative;
+    height: 200px; 
+}
+
+.work-3 {
+    background-image: url("../images/3 work pic.jpeg");
+    background-size: cover;
+    position: relative;
+    height: 200px;
+}
+
+.work-4 {
+    background-image: url("../images/4 work pic.jpeg");
+    background-size: cover;
+    position: relative;
+    height: 200px;
 }
