@@ -125,3 +125,13 @@ header nav ul li {
     position: relative;
     height: 200px;
 }
+
+.flex-bio {
+    padding: 20px;
+    text-align: center; 
+}
+
+.flex-bio img {
+    height: 300px;
+    width: 300px;
+}
