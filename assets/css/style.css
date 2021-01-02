@@ -6,12 +6,12 @@
 
 body {
     font-family: Georgia, 'Times New Roman', sans-serif;
-    color: #66403C;
-    background-color: #C77C75;
+    color: #122230;
+    background-color:#5B7388;
 }
 header {
     display: flex;
-    background-color: #7A4C48;
+    background-color: #5B7388;
     padding: 20px 30px;
     justify-content: space-between;
     align-items: center;
@@ -59,8 +59,8 @@ header nav ul li {
 }
 
 .hero h2 {
-    color: #FA9C93;
-    background-color: #7A4C48;
+    color: #172B3D;
+    background-color: #7EA0BD;
     font-style: italic;
     font-size: 20px;
     padding-right: 10px;
@@ -89,14 +89,14 @@ header nav ul li {
 
 .work {
     margin: 8px;
-    border: 2px solid #66403C;
+    border: 2px solid #294F70;
     height: 200px; 
 }
 
 .work h3, .work h4 {
     text-align: right; 
-    color: #FA9C93; 
-    background-color: #66403C; 
+    color: #172B3D; 
+    background-color: #7EA0BD; 
 }
 
 .work-title {
