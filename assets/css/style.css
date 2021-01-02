@@ -69,6 +69,7 @@ header nav ul li {
      align-items: center;
     justify-content: center;
     text-align: center;
+    margin: 20px; 
 }
 
 .my-work {
@@ -129,9 +130,26 @@ header nav ul li {
     height: 200px;
 }
 
+.work-h1 {
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+.flex-bio-h3 {
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+}
+
+.flex-bio-p { 
+    font-size: 20px;
+    margin: 10px;
+}
 
 .flex-bio {
-    padding: 10px;
+    padding: 20px;
     display: flex; 
     align-items: center;
 }
@@ -141,3 +159,21 @@ header nav ul li {
     width: 300px;
     padding: 10px;
 } 
+
+
+.contact ul {
+    text-align: center;
+    font-size: 20px;
+}
+
+.contact ul li {
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    list-style: none;
+}
+
+.contact-title {
+    font-size: 30px;
+    text-align: center;
+}
