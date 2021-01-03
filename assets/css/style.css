@@ -161,7 +161,6 @@ header nav ul li {
 
 .flex-bio img {
     height: 300px;
-    width: 300px;
     padding: 10px;
 } 
 
@@ -205,19 +204,19 @@ a:visited {
         display: flex; 
         flex-wrap: wrap;
         padding: 20px 30px;
-        justify-content: space-between;
-        align-items: flex-start;
+        justify-content: flex-start;
+        align-items: center;
         position: relative;
     }
     
     header h1 {
-        width: 100%;
+      padding-right: 30px;
     }
 
     .hero {
-        width: 100%;
+        width: 800px;
     }
-
+    
     .hero-quote {
         display: flex;
         flex-wrap: wrap;
@@ -225,13 +224,14 @@ a:visited {
     }
 
     .hero-quote h2 {
-        font-size: 30px;
+        font-size: 20px;
+        padding-right: 50px;
     }
 
     .flex-bio-p {
         display:flex;
         flex-wrap: wrap;
-        font-size: 27px;
+        font-size: 20px;
     }
 
     .contact-title {
@@ -247,16 +247,21 @@ a:visited {
 
     .flex-bio img {
         height: 500px;
-        width: 500px;
         padding: 10px;
     } 
+
+    #Biography {
+        display: wrap;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     .work-h1 {
         font-size: 40px;
     }
 
     .flex-bio-h3 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .my-work {
@@ -266,9 +271,17 @@ a:visited {
 
     /* cellphones */
     @media screen and (max-width: 575px) {
+        header {
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
         header h1 {
-            width: 100%;
             font-size: 80px; 
+            align-content: center;
         }
         
         .flex-bio-p {
@@ -276,6 +289,12 @@ a:visited {
             flex-wrap: wrap;
             font-size: 40px;
         }
+
+        .flex-bio img {
+            display: flex;
+            flex-wrap: wrap;
+            height: 500px;
+        } 
  
         .my-work {
             grid-template-columns: 1fr;
