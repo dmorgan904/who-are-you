@@ -84,14 +84,9 @@ header nav ul li {
 
 .my-work {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3 1fr);
     width: 80%;
-}
-
-.grid-work {
-    flex-wrap: wrap;
-    width: 300px;
 }
 
 .work {
@@ -114,6 +109,10 @@ header nav ul li {
     background-image: url("../images/run-buddy SC.png");
     background-size: cover;
     position: relative;
+    grid-row: 1 / span 3;
+    border: 2px solid #294F70;
+    margin-top: 7px;
+    height: 418px;
 }
 
 .work-2 {
@@ -132,7 +131,6 @@ header nav ul li {
     background-image: url("../images/4 work pic.jpeg");
     background-size: cover;
     position: relative;
-    height: 200px;
 }
 
 .work-h1 {
